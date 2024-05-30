@@ -32,7 +32,7 @@ Catalogo Filmes é uma API robusta e escalável, desenvolvida com NestJS e TypeS
 ```bash
 git clone https://github.com/oatiliohector/catalogoFilmes
 
-cd buyNowAPI
+cd catalogoFilmes
 ```
 
 2. Instale as dependências:
