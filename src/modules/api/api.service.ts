@@ -5,6 +5,7 @@ import { Movie } from './dto/movie.dto';
 @Injectable()
 export class ApiService {
   private movies: Movie[] = [];
+  private currentId = 1;
 
   findAll(): Movie[] {
     return this.movies;
@@ -16,7 +17,7 @@ export class ApiService {
 
   create(createMovieDto: CreateMovieDto): Movie {
     const newMovie: Movie = {
-      id: (this.movies.length + 1).toString(),
+      id: (this.currentId++).toString(),
       ...createMovieDto,
     };
     this.movies.push(newMovie);
