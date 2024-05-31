@@ -1,7 +1,9 @@
-# compiled output
+# Arquivos compilados
 /dist
-/node_modules
 /build
+
+# Dependências
+/node_modules
 
 # Logs
 logs
@@ -12,45 +14,89 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-# OS
-.DS_Store
-
-# Tests
+# Arquivos de cobertura de teste
 /coverage
 /.nyc_output
 
-# IDEs and editors
+# Arquivos de configuração de IDEs e editores
+/.vscode
 /.idea
-.project
-.classpath
-.c9/
+*.sublime-project
+*.sublime-workspace
+/.c9/
 *.launch
 .settings/
-*.sublime-workspace
+*.tmproj
+*.esproj
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# Arquivos temporários e de cache
+*.swp
+*.swo
+*.swm
+*.swn
+*.swl
+*.bak
+*.bk
+*.backup
+*.tmp
+*.temp
+*.cache
+*.cached
 
-# dotenv environment variable files
+# Arquivos de ambiente
 .env
+.env.*
+.env.local
 .env.development.local
 .env.test.local
 .env.production.local
-.env.local
+.env.staging.local
+.env.local.*
 
-# temp directory
-.temp
-.tmp
+# Arquivos de credenciais e chaves
+*.pem
+*.pub
+*.key
+*.csr
+*.cert
+*.p12
+*.pfx
+*.cer
 
-# Runtime data
-pids
-*.pid
+# Dados de execução
+/pids
+/*.pid
+/*.pid.lock
 *.seed
-*.pid.lock
+*.db
+*.sqlite
+*.sqlite3
+*.csv
 
-# Diagnostic reports (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+# Arquivos de configuração do sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# Arquivos de configuração de ferramentas de teste e linting
+/.eslintcache
+/.vscode-test
+/.wallaby
+/sonar-project.properties
+/.husky
+/.jest
+/.snyk
+/.esmrc
+/.cache
+/.nyc
+/.idea.js
+
+# Outros
+*.tgz
+*.zip
+*.rar
+*.gz
+*.bz2
+*.7z
+*.log*
